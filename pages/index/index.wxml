@@ -1,0 +1,57 @@
+<!--index.wxml-->
+<!-- <image class ="background" src='https://yy.sweetxxin.top/merry/compress/bgpf.jpg' mode='widthFix' ></image> -->
+<view class="container" >
+    <button class='ubutton' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <view  class="userinfo" wx:else>
+      <text class="powerby">Power By GDPU团委 网络中心</text>
+        <view class="show-iconView">
+          <image src="{{userInfo.avatarUrl}}" class="show-iconImage" animation="{{animation}}" mode="scaleToFill" bindtap='play'></image>
+        </view>
+    <view style="border:2px solid rgb(225,84,93);height:400rpx;width:400rpx;position:relative;margin:0px;top:60rpx;" >
+      <canvas-drag id="canvas-drag" graph="{{graph}}" width="400" height="400"></canvas-drag>
+    </view>
+    <view>
+      <image class="border" src='https://yy.sweetxxin.top/merry/compress/border.png' mode='widthFix'></image>
+    </view>
+    <view>
+      <image class="else" src='https://yy.sweetxxin.top/merry/compress/button.png' mode='widthFix'></image>
+    </view>
+    <view class='options'>
+      <text id='t1'>圣诞装饰</text>
+      <text id='t2'>圣诞老人</text>
+      <text id='t3'>圣诞帽</text>
+      <text id='t4'>雪花</text>
+      <text id='t5'>雪人</text>
+      <image id='s1' bindtap='select' data-catagory="花圈" src=""></image>
+      <image id='s2' bindtap='select' data-catagory="圣诞老人" src=""></image>
+      <image id='s3' bindtap='select' data-catagory="圣诞帽" src=""></image>
+      <image id='s4' bindtap='select' data-catagory="雪花" src=""></image>
+      <image id='s5' bindtap='select' data-catagory="雪人" src=""></image>
+      <scroll-view 
+      class="scroll-view" scroll-with-animation scroll-x="true" >
+        <view class="scroll-box"> 
+         <block wx:if="{{paths!=''}}"  >
+          <view  class="item_list"  wx:for="{{paths}}" wx:for-item="src" wx:key="{{src}}">
+           <image  bindtap='use' data-imgsrc="{{src}}" src="{{src}}"></image></view>
+         </block>
+
+        <block  wx:else >
+          <text class="text">
+            <text id="text1" decode='true'>&nbsp;你想要的&emsp;都在这里\n</text>
+            <text id="text2" decode='true'>点击以上图片选择分类\n</text>
+          </text>
+        </block>
+       </view>
+      </scroll-view>
+    </view>
+    <view class='func'>
+      <text id='addp' bindtap="onAddImage">添加图片</text>
+      <text id='usei' bindtap="onAddAvatar">使用头像</text>
+      <text id='addborder' bindtap="onUseBorder">使用边框</text>
+      <text id='preview' bindtap="onExport">图片预览</text>
+      <text id='save' bindtap="onSave">保存到相册</text>
+      <text id='changeb' bindtap="onChangeBgImage">改变背景照片</text>
+    </view>
+  </view>
+</view>
+

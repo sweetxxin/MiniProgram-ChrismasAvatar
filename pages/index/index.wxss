@@ -1,0 +1,284 @@
+/**index.wxss**/
+.container {
+  position: relative;
+}
+#canvas-drag{
+  position: absolute;
+  top: 0rpx;
+}
+.topic{
+  position: absolute;
+  top: 500rpx;
+  left: 0rpx;
+  right: 0rpx;
+  text-align: center;
+  line-height: 70rpx;
+
+  font-size: 45rpx;
+  font-family: "幼圆";
+  color: #520e0e;
+ 
+}
+.else{
+  position: absolute;
+  bottom: 250rpx;
+  width: 100%;
+  left: 0rpx;
+}
+.border{
+  width: 100%;
+  position: absolute;
+  left: 0rpx;
+  right: 0rpx;
+  top: 720rpx;
+  margin: 0 auto;
+}
+.text{
+  position: absolute;
+  top: 10rpx;
+  left: 0rpx;
+  right: 0rpx;
+}
+#text1{
+  font-size: 36rpx;
+  
+}
+#text2{
+  position: relative;
+    top: -9rpx;
+  font-size: 20rpx;
+}
+.func{
+  width: 100%;
+
+}
+#preview{
+  font-size: 23rpx;
+  font-family: "幼圆";
+  color: #520e0e;
+  /* z-index: -1; */
+  position: absolute;
+  top: 150rpx;
+  left: 228rpx;
+}
+#addp{
+  font-size: 23rpx;
+  font-family: "幼圆";
+  color: #520e0e;
+  position: absolute;
+  top: 90rpx;
+  right: 65rpx;
+}
+#usei{
+  font-size: 23rpx;
+  font-family: "幼圆";
+  color: #520e0e;
+  /* z-index: -1; */
+  position: absolute;
+  top: 150rpx;
+  right: 207rpx;
+}
+#save{
+  font-size: 25rpx;
+  font-family: "幼圆";
+  color: #520e0e;
+
+  position: absolute;
+  top: 680rpx;
+  left: 330rpx;
+  
+}
+#addborder{
+ 
+  font-size: 23rpx;
+  font-family: "幼圆";
+  color: #520e0e;
+
+  position: absolute;
+  top: 217rpx;
+  left: 344rpx;
+  
+
+}
+#changeb{
+  font-size: 23rpx;
+  font-family: "幼圆";
+  color: #520e0e;
+  position: absolute;
+  top: 90rpx;
+  left: 60rpx;
+}
+#s1{
+ position: absolute;
+  top: -80rpx;
+  left: 130rpx;
+  height: 135rpx;
+  width: 120rpx;
+}
+#s2{
+position: absolute;
+  top: -50rpx;
+  left: 320rpx;
+  height: 135rpx;
+  width: 140rpx;
+}
+#s3{
+  position: absolute;
+  top: 40rpx;
+  left: 10rpx;
+
+}
+#s4{
+  position: absolute;
+  top: -100rpx;
+  right: 3rpx;
+
+}
+#s5{
+  position: absolute;
+  top: -40rpx;
+  right: 110rpx;
+
+}
+text{
+  font-size: 30rpx;
+  font-family: "幼圆";
+  color:rgb(103, 86, 223);
+}
+#t1{
+  position: absolute;
+  top: -140rpx;
+  left: 50rpx;
+}
+#t2{
+  position: absolute;
+  top: -75rpx;
+  right: 230rpx;
+}
+#t3{
+  position: absolute;
+  top: -50rpx;
+  left: 10rpx;
+}
+#t4{
+  position: absolute;
+  top: -145rpx;
+  right: 100rpx;
+}
+#t5{
+  position: absolute;
+  top: -110rpx;
+  right: 170rpx;
+}
+#right{
+  width: 40px;
+  position: absolute;
+  top: 240rpx;
+  
+  right: 57rpx;
+}
+.background{
+
+width: 100%;
+position: absolute;
+top: 0px;
+  z-index: -1;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+::-webkit-scrollbar{
+width: 0;
+height: 0;
+color: transparent;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  
+}
+.powerby{
+  color: rgb(102, 151, 59);
+  font-family: "黑体";
+  font-size: 24rpx;
+  font-weight: 500;
+  position: absolute;
+  top: 1145rpx;
+  
+  
+}
+.nxyd{
+  position: absolute;
+  z-index: -1;
+}
+.userinfo-nickname {
+  color: #aaa;
+  position: absolute;
+  top: 310rpx;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+image{
+  /* border: 1px solid red; */
+  height: 120rpx;
+  width: 120rpx;
+}
+.show-iconView{
+  z-index: 2;
+  height: 100rpx;
+  width: 100rpx;
+  /* border: 1px solid #aaa; */
+  border-radius:50%; 
+  position: fixed;
+  top: 5rpx;
+  right: 10rpx;
+}
+.show-iconImage{
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+  margin: 0px;
+}
+.scroll-view{
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 180rpx;
+  left: 0rpx;
+  right: 0rpx;
+  text-align: center;
+   height:160rpx;
+   width:60%;
+   white-space: nowrap;
+  display: flex; 
+  overflow: scroll; 
+  margin: 0rpx auto;
+}
+.item_list{
+height: auto;
+display: inline-table;
+margin-right:16rpx; 
+margin-left:16rpx; 
+}
+.options{
+  position: absolute;
+  top: 840rpx;
+  left: 0rpx;
+  right: 0rpx;
+  text-align: center;
+  margin: 0 auto;
+}
+.catagory{
+  display: inline-block;
+  border: 1px solid #aaa;
+  margin-left:10rpx; 
+}
+.ubutton{
+  border-radius:5%;
+  margin-top:200rpx; 
+}

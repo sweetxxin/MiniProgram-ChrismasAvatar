@@ -1,0 +1,13 @@
+/**app.wxss**/
+.container {
+  height: 1210rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+  background: url(https://ws1.sinaimg.cn/large/a8bde94agy1fycbd5c7dfj211y1tm418.jpg);
+  background-size: cover
+
+} 
